@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Text Editor</title>
+  </head>
+  <body>
+    <div class="text-editor-area">
+      <div class="styles-bar" id="styles-bar">
+        <button class="bold-btn btn style-btn" id="bold-btn">B</button>
+
+        <button class="italic-btn btn style-btn" id="italic-btn">
+          <i class="fa-solid fa-italic"></i>
+        </button>
+
+        <button class="underline-btn btn style-btn" id="underline-btn">
+          <i class="fa-solid fa-underline"></i>
+        </button>
+
+        <button class="bigger-font-btn btn style-btn" id="bigger-size-btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <button class="smaller-font-btn btn style-btn" id="smaller-size-btn">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+
+        <label for="color-input" class="color-input btn"
+          >A
+          <input type="color" class="d-none style-btn" id="color-input" />
+        </label>
+
+        <button class="reset-btn btn style-btn" id="reset-btn">
+          <i class="fa-sharp fa-solid fa-power-off"></i>
+        </button>
+
+        <button class="remove-btn btn style-btn" id="remove-text-btn">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+
+      <textarea class="text-area" id="editor-text-area"></textarea>
+      <button class="submit-btn" id="submit-btn">Submit</button>
+    </div>
+
+    <div class="displayed-text-area" id="displayed-text-area"></div>
+
+    <script src="js/variables.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/events.js"></script>
+  </body>
+</html>
